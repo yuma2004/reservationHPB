@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPB連携予約フォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reservation-container">
+        <h1>予約フォーム</h1>
+        <form id="reservation-form">
+            <label for="salon">店舗を選択</label>
+            <select id="salon" name="salon">
+                <option value="">店舗を選択してください</option>
+            </select>
+
+            <label for="service">サービスを選択</label>
+            <select id="service" name="service">
+                <option value="">サービスを選択してください</option>
+            </select>
+
+            <label for="date">予約日を選択</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">予約時間を選択</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">予約する</button>
+        </form>
+
+        <div id="service-details" style="margin-top: 20px;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
